@@ -1,0 +1,5 @@
+torch>=1.9.0
+torchvision>=0.10.0
+gym>=0.18.3
+gym-retro>=0.7.1
+stable-baselines3>=1.1.0
