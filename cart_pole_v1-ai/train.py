@@ -88,7 +88,7 @@ for episode in range(1):
     frames = []
 
     # Play 200 step in every episode
-    for setp in range(2000):
+    for setp in range(20000):
         # Render
         img = env.render("rgb_array")
         frames.append(img)
@@ -99,6 +99,9 @@ for episode in range(1):
         # Take action
         obs, reward, done, info = env.step(action)
         episode_rewards += reward
+
+        if done:
+            break
 
     totals.append(episode_rewards)
 
